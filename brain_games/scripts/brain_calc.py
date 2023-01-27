@@ -28,10 +28,12 @@ for i in range(3):
   random_num1 = random.randint(1, 30)
   random_num2 = random.randint(1, 30)
   operator = random.choice(keys)
-  print("Question: " + str(random_num1) + str(operator) + str(random_num2))
-  result = str(random_num1) + str(operator) + str(random_num2)
-  answer = input('Your answer:')
-  if answer == (operators[operator](random_num1, random_num2)):
+#print("Question: " + str(random_num1) + str(operator) + str(random_num2))
+  counting = str(random_num1) + str(operator) + str(random_num2)
+  print("Question: " + counting)
+  result = operators[operator](random_num1, random_num2)
+  answer = int(input('Your answer:'))
+  if answer == result:
     print('Correct!')
     tries += 1
   else:
