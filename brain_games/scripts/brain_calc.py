@@ -6,13 +6,18 @@ import random
 from random import randint
 from operator import add, sub, mul
 
+
+print("Welcome to the Brain Games!")
+name = prompt.string("May I have your name? ")
+
 # глобальная функция приветствия и запроса имени
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
+    #print("Welcome to the Brain Games!")
+    #name = prompt.string("May I have your name? ")
     print('Hello, ' + name + "!")
 
 main()
+
 
 operators = {"+": add, "-": sub, "*": mul}
 tries = 3 # количество попыток пользователя
@@ -43,6 +48,5 @@ for i in range(3):
 if tries >= 3:
   print('Congratulations!')
 
-
 #if __name__ == '__main__':
-#main() 
+  #main() 
