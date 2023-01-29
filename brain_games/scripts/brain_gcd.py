@@ -12,7 +12,7 @@ def main():
     name = prompt.string("May I have your name? ")
     print('Hello, ' + name + "!")
     print('Find the greatest common divisor of given numbers')
-
+    return name
 name = main()
 
 
@@ -29,7 +29,7 @@ random_num2 = random.randint(1, 1000)
 guesses_left = 0
 while guesses_left <=3:
     print("Question: " + str(random_num1) + ' ' + str(random_num2))
-    answer = input('Your answer:')
+    answer = int(input('Your answer:'))
     result = find_gcd(random_num2%random_num1,random_num1)
     if result == answer:
         print('Correct!')
@@ -40,5 +40,3 @@ while guesses_left <=3:
     break
 if guesses_left >= 3:
     print('Congratulations!')
-
-find_gcd(random_num1, random_num2)
