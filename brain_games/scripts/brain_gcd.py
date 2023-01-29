@@ -1,42 +1,38 @@
 #!/usr/bin/env python3
 
-
 import prompt
 import random
 from random import randint
 
 
-# глобальная функция приветствия
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def play_game(name):
+    print(f"Hello, {name}!\nFind the greatest common divisor of given numbers.")
+    attempts = 3
+    while attempts > 0:
+        num1 = random.randint(1, 1000)
+        num2 = random.randint(1, 1000)
+        print(f"Question: {num1} {num2}")
+        answer = int(input("Your answer: "))
+        if gcd(num1, num2) == answer:
+            print("Correct!")
+            break
+        else:
+            attempts -= 1
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd(num1, num2)}'.")
+            if attempts == 0:
+                print(f"Let's try again, {name}!")
+                break
+            print(f"Let's try again, {name}!")
+
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
-    print('Hello, ' + name + "!")
-    print('Find the greatest common divisor of given numbers')
-    return name
-name = main()
+    play_game(name)
 
-
-# функция нахождения gcd
-def find_gcd(random_num1, random_num2):
-    if random_num1 == 0:
-        return random_num2
-    return find_gcd(random_num2%random_num1,random_num1)
-random_num1 = random.randint(1, 1000)
-random_num2 = random.randint(1, 1000)
-
-
-# программа задает вопрос
-guesses_left = 0
-while guesses_left <=3:
-    print("Question: " + str(random_num1) + ' ' + str(random_num2))
-    answer = int(input('Your answer:'))
-    result = find_gcd(random_num2%random_num1,random_num1)
-    if result == answer:
-        print('Correct!')
-        guesses_left += 1
-    else:
-        print(answer, "is wrong answer ;(. Correct answer was", result)
-        print('Let\'s try again, ' + name + '!')
-    break
-if guesses_left >= 3:
-    print('Congratulations!')
+if __name__ == "__main__":
+    main()
