@@ -13,34 +13,28 @@ def even_or_odd(number):
     else:
         return 'no'
 
-
-# функция приветствия пользователя + задача игры
+# функция приветствия игрока и описание логики игры через цикл while
 def main():
-    global name # для доступности переменной в других частях кодах, используем глобальность
     print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
+    name = input("May I have your name? ")
     print('Hello, ' + name + "!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
+    guess_left = 0  # вводим переменную с количеством правильных ответов (куда они будут записываться)
+    while guess_left < 3:  # обозначаем условие, при котором цикл действует
+        random_number = random.randint(1, 20)  # генерируем случайное число
+        print("Question: " + str(random_number))
+        answer = input('Your answer:')
+        result = even_or_odd(random_number)
+        if result == answer:
+            print('Correct!')
+            guess_left += 1
+        else:
+            print(answer, "is wrong answer ;(. Correct answer was", result)
+            print('Let\'s try again, ' + name + '!')
+            break
+    if guess_left == 3:
+        print('Congratulations, ' + name + '!')
 
-main()  # вызываем основную функцию
-
-guess_left = 3  # вводим переменную с количеством оставшихся попыток
-while guess_left > 0:  # приступаем к циклу while
-    random_number = random.randint(1, 20) #генерируем случайное число
-    print("Question: " + str(random_number))
-    answer = input('Your answer:')
-    result = even_or_odd(random_number)
-    if result == answer:   # сверяем ответ пользователя и результат программы
-        print('Correct!')
-        guess_left -= 1  # подсчитываем сколько осталось попыток
-    else:
-        print(answer, "is wrong answer ;(. Correct answer was", result)
-        print('Let\'s try again, ' + name + '!')
-        break
-
-if guess_left == 0:
-    print('Congratulations, ' + name + '!')
-input() # очищаем буфер
-
-if name == 'main':
+if __name__ == '__main__':
     main()
+
