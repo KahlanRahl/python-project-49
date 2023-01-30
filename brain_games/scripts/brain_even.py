@@ -40,7 +40,7 @@ while guess_left > 0:  # приступаем к циклу while
 
 if guess_left == 0:
     print('Congratulations, ' + name + '!')
-
+input() # очищаем буфер
 
 if name == 'main':
     main()
