@@ -7,7 +7,7 @@
 <a href="https://asciinema.org/a/4wn3nPZbr6s5FNi32urimdW00" target="_blank"><img src="https://asciinema.org/a/4wn3nPZbr6s5FNi32urimdW00.svg" /></a>
 
 2) Brain calc
-<a href="https://asciinema.org/a/y8jGEdF62p7JwXrcGGFhoZ6NO" target="_blank"><img src="https://asciinema.org/a/y8jGEdF62p7JwXrcGGFhoZ6NO.svg" /></a>
+<a href="https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51" target="_blank"><img src="https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51.svg" /></a>
 
 3) Brain GCD
 <a href="https://asciinema.org/a/vO0JX4lkfSk3JvSgFen4C78Vc" target="_blank"><img src="https://asciinema.org/a/vO0JX4lkfSk3JvSgFen4C78Vc.svg" /></a>
