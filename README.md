@@ -18,7 +18,8 @@ Five (5) short games with randomly generated numbers. In all five games the user
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KahlanRahl/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/KahlanRahl/python-project-49/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/b261c012a8cc21563cba/maintainability)](https://codeclimate.com/github/KahlanRahl/python-project-49/maintainability)
+[![Maintainability]
+(https://api.codeclimate.com/v1/badges/b261c012a8cc21563cba/maintainability)](https://codeclimate.com/github/KahlanRahl/python-project-49/maintainability)
 
 
 ## Installation
