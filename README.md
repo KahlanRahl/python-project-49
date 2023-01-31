@@ -40,9 +40,9 @@ Run games:
     
 ## Demo
 
-1. Brain Even: [![asciicast](https://asciinema.org/a/4wn3nPZbr6s5FNi32urimdW00.svg)](https://asciinema.org/a/4wn3nPZbr6s5FNi32urimdW00)
+1.  [![asciicast](https://asciinema.org/a/4wn3nPZbr6s5FNi32urimdW00.svg)](https://asciinema.org/a/4wn3nPZbr6s5FNi32urimdW00)
 
-2. Brain Calc: [![asciicast](https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51.svg)](https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51)
+2.  [![asciicast](https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51.svg)](https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51)
 
 3. [![asciicast](https://asciinema.org/a/kveMZkSoSu9FWzvWPuLOdC6Nc.svg)](https://asciinema.org/a/kveMZkSoSu9FWzvWPuLOdC6Nc)
 
