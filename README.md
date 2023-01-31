@@ -14,3 +14,6 @@
 
 4) Brain progression
 <a href="https://asciinema.org/a/TIIMzvC60LLSgBfRt9fhvqjsp" target="_blank"><img src="https://asciinema.org/a/TIIMzvC60LLSgBfRt9fhvqjsp.svg" /></a>
+
+5) Brain prime
+<a href="https://asciinema.org/a/wtvC67rd9WrmCGor8L1MWdDKp" target="_blank"><img src="https://asciinema.org/a/wtvC67rd9WrmCGor8L1MWdDKp.svg" /></a>
