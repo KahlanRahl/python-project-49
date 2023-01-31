@@ -11,3 +11,6 @@
 
 3) Brain GCD
 <a href="https://asciinema.org/a/kveMZkSoSu9FWzvWPuLOdC6Nc" target="_blank"><img src="https://asciinema.org/a/kveMZkSoSu9FWzvWPuLOdC6Nc.svg" /></a>
+
+4) Brain progression
+<a href="https://asciinema.org/a/TIIMzvC60LLSgBfRt9fhvqjsp" target="_blank"><img src="https://asciinema.org/a/TIIMzvC60LLSgBfRt9fhvqjsp.svg" /></a>
