@@ -1,1 +1,6 @@
 mkdir .venv
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
