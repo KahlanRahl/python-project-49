@@ -3,6 +3,7 @@
 import prompt
 import random
 
+
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
@@ -19,10 +20,12 @@ def main():
         if user_answer == answer:
             print("Correct!")
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
+
 
 def is_prime(number):
     if number <= 1:
@@ -32,6 +35,6 @@ def is_prime(number):
             return False
     return True
 
+
 if __name__ == "__main__":
     main()
-

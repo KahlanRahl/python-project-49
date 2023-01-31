@@ -2,7 +2,6 @@
 
 import prompt
 import random
-from random import randint
 
 
 # определяем функцию нахождения наибольшего общего делителя
@@ -28,13 +27,16 @@ def play_game(name):
                 break
         else:
             attempts = 0
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd(num1, num2)}'.")
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{gcd(num1, num2)}'.")
             print(f"Let's try again, {name}!")
+
 
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     play_game(name)
+
 
 if __name__ == "__main__":
     main()
