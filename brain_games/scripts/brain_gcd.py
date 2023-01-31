@@ -5,11 +5,14 @@ import random
 from random import randint
 
 
+# определяем функцию нахождения наибольшего общего делителя
 def gcd(a, b):
     while b != 0:
         a, b = b, a % b
     return a
 
+
+# функция-цикл логики игры
 def play_game(name):
     print(f"Hello, {name}!\nFind the greatest common divisor of given numbers.")
     attempts = 3
@@ -19,14 +22,13 @@ def play_game(name):
         print(f"Question: {num1} {num2}")
         answer = int(input("Your answer: "))
         if gcd(num1, num2) == answer:
-            print("Correct!")
-            break
-        else:
             attempts -= 1
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd(num1, num2)}'.")
             if attempts == 0:
-                print(f"Let's try again, {name}!")
+                print(f"Congratulations, {name}!")
                 break
+        else:
+            attempts = 0
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd(num1, num2)}'.")
             print(f"Let's try again, {name}!")
 
 def main():

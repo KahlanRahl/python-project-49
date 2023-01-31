@@ -10,4 +10,4 @@
 <a href="https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51" target="_blank"><img src="https://asciinema.org/a/ZBxM9OC7pEWFdul7e4VAWQr51.svg" /></a>
 
 3) Brain GCD
-<a href="https://asciinema.org/a/vO0JX4lkfSk3JvSgFen4C78Vc" target="_blank"><img src="https://asciinema.org/a/vO0JX4lkfSk3JvSgFen4C78Vc.svg" /></a>
+<a href="https://asciinema.org/a/kveMZkSoSu9FWzvWPuLOdC6Nc" target="_blank"><img src="https://asciinema.org/a/kveMZkSoSu9FWzvWPuLOdC6Nc.svg" /></a>
