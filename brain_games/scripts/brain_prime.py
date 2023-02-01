@@ -16,7 +16,7 @@ def main():
         else:
             answer = "no"
         print(f"Question: {number}")
-        user_answer = input().strip()
+        user_answer = input("Your answer: ")
         if user_answer == answer:
             print("Correct!")
         else:
