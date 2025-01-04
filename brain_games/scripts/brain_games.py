@@ -3,6 +3,7 @@
 # Импортируем функцию welcome_user из модуля cli
 from brain_games.cli import welcome_user
 
+
 def main():
     """
     Основная функция программы.
@@ -12,6 +13,7 @@ def main():
 
     # Вызываем функцию welcome_user
     welcome_user()
+
 
 # Проверяем, запущен ли файл напрямую
 if __name__ == "__main__":
