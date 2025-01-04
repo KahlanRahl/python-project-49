@@ -1,2 +1,36 @@
-.venv
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Кэш Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Файлы Poetry
+poetry.lock
+
+# Файлы сборки и дистрибуции
+dist/
+build/
+*.egg-info/
+
+# Файлы редактора/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Локальные настройки
+*.env
+*.local
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Игнорировать .DS_Store на всех уровнях
+.DS_Store
+**/.DS_Store
