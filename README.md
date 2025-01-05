@@ -15,4 +15,8 @@ Brain Games — это набор мини-игр для тренировки м
    
 ## Пример работы игры
 
+Демонстрация игры "Игра на четность"
 [![asciicast](https://asciinema.org/a/bqllLdv8W1Gszqrxz7Igv8cax.svg)](https://asciinema.org/a/bqllLdv8W1Gszqrxz7Igv8cax)
+
+Демонстрация игры "Калькулятор"
+[![asciicast](https://asciinema.org/a/bqllLdv8W1Gszqrxz7Igv8cax.svg)](https://asciinema.org/a/a7suuLF1YSH3lpeQVWxN2yssL)
