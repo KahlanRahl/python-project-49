@@ -1,43 +1,33 @@
 #!/usr/bin/env python3
 
-from brain_games.games.game_engine import run_game
+from brain_games.game_engine import run_game  # Импортируем общую логику игры
 import random
 
 
 def is_even(number):
     """
-    Проверяет, является ли число чётным.
-
-    Параметры:
-    - number: Число для проверки.
-
-    Возвращает:
-    - True, если число чётное, иначе False.
+    Функция для проверки, является ли число чётным.
     """
     return number % 2 == 0
 
 
 def generate_question():
     """
-    Генерирует вопрос и правильный ответ для игры «Проверка на чётность».
-
-    Возвращает:
-    - question: Вопрос (случайное число).
-    - correct_answer: Правильный ответ ("yes" или "no").
+    Генерация вопроса и правильного ответа для игры "Чётное ли число?".
     """
     number = random.randint(1, 100)  # Генерация случайного числа
     correct_answer = "yes" if is_even(number) else "no"  # Определение правильного ответа
-    question = f"{number}"  # Формирование вопроса
-    return question, correct_answer
+    question = f"{number}"  # Вопрос — это само число
+    return question, correct_answer  # Возвращаем вопрос и правильный ответ
 
 
 def play_even():
     """
-    Запускает игру «Проверка на чётность».
+    Запуск игры для проверки чётности числа.
     """
     run_game(
-        'Answer "yes" if the number is even, otherwise answer "no".',
-        generate_question,
+        'Answer "yes" if the number is even, otherwise answer "no".',  # Описание игры
+        generate_question,  # Функция для генерации вопроса и ответа
     )
 
 

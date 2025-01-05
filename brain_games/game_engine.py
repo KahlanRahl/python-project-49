@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-import prompt  # Импорт библиотеки prompt для взаимодействия с пользователем
+import prompt  # Импортируем необходимые модули
+from brain_games.cli import welcome_user  # Импортируем функцию welcome_user
 
-ROUNDS_COUNT = 3  # Константа: количество раундов игры (одинаково для всех игр)
+ROUNDS_COUNT = 3  # Общее количество раундов для всех игр
 
 
 def run_game(description: str, generate_question_and_answer):
@@ -10,32 +11,23 @@ def run_game(description: str, generate_question_and_answer):
     Запускает игру с общей логикой.
 
     Параметры:
-    - description: Описание игры, выводится в начале.
-    - generate_question_and_answer: Функция для генерации вопроса и правильного ответа.
+    - description (str): Описание игры.
+    - generate_question_and_answer (Callable): Функция для генерации вопроса и ответа.
     """
-    print("Welcome to the Brain Games!")  # Приветствие игрока
-    print(description)  # Вывод описания правил игры
-    print()  # Пустая строка для удобства чтения
+    name = welcome_user()  # Приветствие и запрос имени
+    print(description)  # Описание игры
+    print()
 
-    name = prompt.string("May I have your name? ")  # Запрос имени игрока
-    print(f"Hello, {name}!")  # Приветствие с использованием имени
-    print()  # Пустая строка для удобства чтения
-
-    for _ in range(ROUNDS_COUNT):  # Цикл, запускающий три раунда игры
-        question, correct_answer = generate_question_and_answer()
-        # Генерация вопроса и правильного ответа с использованием переданной функции
-
-        print(f"Question: {question}")  # Вывод вопроса для пользователя
-        user_answer = prompt.string("Your answer: ").lower()
-        # Получение ответа от пользователя и приведение его к нижнему регистру
+    for _ in range(ROUNDS_COUNT):
+        question, correct_answer = generate_question_and_answer()  # Генерация вопроса и ответа
+        print(f"Question: {question}")  # Вывод вопроса
+        user_answer = prompt.string("Your answer: ").strip().lower()  # Приводим ответ к нижнему регистру
 
         if user_answer != correct_answer:
-            # Проверка: совпадает ли ответ пользователя с правильным
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            # Вывод сообщения об ошибке с указанием правильного ответа
-            print(f"Let's try again, {name}!")  # Сообщение об окончании игры из-за ошибки
-            return  # Завершение игры
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")  # Неправильный ответ
+            print(f"Let's try again, {name}!")  # Сообщение о неудаче
+            return
 
-        print("Correct!")  # Сообщение о правильном ответе
+        print("Correct!")  # Если ответ правильный
 
-    print(f"Congratulations, {name}!")  # Поздравление пользователя с успешным завершением игры
+    print(f"Congratulations, {name}!")  # Поздравление с победой
