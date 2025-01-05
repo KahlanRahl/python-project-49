@@ -12,3 +12,7 @@ Brain Games — это набор мини-игр для тренировки м
    ```bash
    git clone https://github.com/ваш-username/ваш-репозиторий.git
    cd ваш-репозиторий
+   
+## Пример работы игры
+
+[![asciicast](https://asciinema.org/a/bqllLdv8W1Gszqrxz7Igv8cax.svg)](https://asciinema.org/a/bqllLdv8W1Gszqrxz7Igv8cax)
