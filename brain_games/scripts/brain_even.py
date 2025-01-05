@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 
-import random  # Импортируем модуль для генерации случайных чисел
-
+import random
 
 def is_even(number):
-    """Проверяет, является ли число чётным."""
-    return number % 2 == 0  # Возвращает True, если число чётное, иначе False
+    """
+    Проверяет, является ли число чётным.
+    :param number: Число для проверки.
+    :return: True, если число чётное, иначе False.
+    """
+    return number % 2 == 0
 
 
-def play_even_game():
-    """Запускает игру «Проверка на чётность»."""
+def main():
+    """
+    Запускает игру «Проверка на чётность».
+    """
     # Приветствуем пользователя
     print("Welcome to the Brain Games!")
     # Запрашиваем имя пользователя
@@ -55,4 +60,4 @@ def play_even_game():
 
 
 if __name__ == "__main__":
-    play_even_game()  # Запуск игры
+    main()  # Запуск игры
