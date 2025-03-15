@@ -34,3 +34,4 @@ build/
 # Игнорировать .DS_Store на всех уровнях
 .DS_Store
 **/.DS_Store
+uv.lock
