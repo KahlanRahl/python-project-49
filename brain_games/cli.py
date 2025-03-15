@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
+import prompt
+
 
 def welcome_user():
     """
-    Приветствие пользователя и запрос имени.
+    Запрос имени пользователя и приветствие с использованием
+    библиотеки prompt для лучшей обработки кодировки.
     """
-    print("Welcome to the Brain Games!")  # Приветствие
-    name = input("May I have your name? ")  # Запрос имени
-    print(f"Hello, {name}!")  # Приветствие с именем
-    return name  # Возвращаем имя пользователя
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
