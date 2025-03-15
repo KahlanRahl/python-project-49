@@ -33,3 +33,6 @@ Brain Games — это набор мини-игр для тренировки м
 
 ### Демонстрация игры "Калькулятор"
 [![asciicast](https://asciinema.org/a/3q6ulroudvyTflfCpmCkwfHZ2.svg)](https://asciinema.org/a/3q6ulroudvyTflfCpmCkwfHZ2)
+
+### Демонстрация игры "НОД"
+[![asciicast](https://asciinema.org/a/w50uXCqp9IbvZVci5Ir89zxEy.svg)](https://asciinema.org/a/w50uXCqp9IbvZVci5Ir89zxEy)
