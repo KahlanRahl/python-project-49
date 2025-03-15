@@ -39,3 +39,6 @@ Brain Games — это набор мини-игр для тренировки м
 
 ### Демонстрация игры "Арифметическая прогрессия"
 [![asciicast](https://asciinema.org/a/0WO8wrod39TAJkBnu9A0FJ85A.svg)](https://asciinema.org/a/0WO8wrod39TAJkBnu9A0FJ85A)
+
+### Демонстрация игры "Простое ли число?"
+[![asciicast](https://asciinema.org/a/ivlrJ793mIzA6ZkV1BNU9wSCg.svg)](https://asciinema.org/a/ivlrJ793mIzA6ZkV1BNU9wSCg)
