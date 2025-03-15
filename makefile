@@ -1,17 +1,16 @@
 install:
-	poetry install
-	
-build:
-	poetry build
-
-publish:
-	poetry publish --dry-run
-
-package-install:
-	python3 -m pipx install dist/*.whl
-
-lint:
-	poetry run flake8 brain_games
+	uv sync
 
 brain-games:
-	poetry run brain-games
+	uv run brain-games
+
+build:
+	uv build
+
+package-install:
+	uv tool install dist/*.whl
+
+lint:
+	flake8 brain_games
+
+.PHONY: install brain-games build package-install lint
