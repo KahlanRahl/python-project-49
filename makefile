@@ -8,9 +8,9 @@ build:
 	uv build
 
 package-install:
-	uv tool install dist/*.whl
+	uv tool install --force dist/*.whl
 
 lint:
-	flake8 brain_games
+	uv run ruff check brain_games
 
 .PHONY: install brain-games build package-install lint

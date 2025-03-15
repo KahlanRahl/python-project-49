@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from brain_games.game_engine import run_game  # Импортируем общую логику игры
 import random
+
+from brain_games.game_engine import run_game  # Импортируем общую логику игры
 
 
 def generate_question():
@@ -10,7 +11,8 @@ def generate_question():
     """
     num1 = random.randint(1, 100)  # Первое случайное число
     num2 = random.randint(1, 100)  # Второе случайное число
-    operation = random.choice(['+', '-', '*'])  # Операция (сложение, вычитание или умножение)
+    # Операция (сложение, вычитание или умножение)
+    operation = random.choice(['+', '-', '*'])
 
     result = None  # Инициализация переменной result, чтобы избежать ошибки
 
@@ -23,7 +25,7 @@ def generate_question():
         case '*':
             result = num1 * num2
 
-    # Если result остался равным None (это может быть вызвано ошибкой), то нужно выбросить исключение
+    # Если result остался равным None, то нужно выбросить исключение
     if result is None:
         raise ValueError(f"Unsupported operation: {operation}")
 

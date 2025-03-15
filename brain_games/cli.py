@@ -4,8 +4,7 @@ import prompt
 
 def welcome_user():
     """
-    Запрос имени пользователя и приветствие с использованием
-    библиотеки prompt для лучшей обработки кодировки.
+    Запрос имени пользователя и приветствие.
     """
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
