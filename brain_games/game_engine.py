@@ -13,7 +13,8 @@ def run_game(description: str, generate_question_and_answer):
 
     Параметры:
     - description (str): Описание игры.
-    - generate_question_and_answer (Callable): Функция для генерации вопроса и ответа.
+    - generate_question_and_answer (Callable): Функция для генерации
+      вопроса и ответа.
     """
     name = welcome_user()  # Приветствие и запрос имени
     print(description)  # Описание игры
