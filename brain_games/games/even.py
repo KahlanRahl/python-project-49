@@ -28,7 +28,7 @@ def play_even():
     Запуск игры "Проверка на четность".
     """
     run_game(
-        "Answer 'yes' if the number is even, otherwise answer 'no'.",
+        "Answer \"yes\" if the number is even, otherwise answer \"no\".",
         generate_question
     )
 
