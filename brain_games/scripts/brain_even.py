@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Скрипт для запуска игры 'Проверка на чётность'."""
 
-from brain_games.games.brain_even import play_even
+from brain_games.games.even import play_even
 
 
 def main():
