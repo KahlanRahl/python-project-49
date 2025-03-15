@@ -2,8 +2,8 @@
 
 ### Hexlet tests and linter status:
 
-[![Hexlet tests and linter status](https://github.com/KahlanRahl/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KahlanRahl/python-project-49/actions)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/KahlanRahl/python-project-49)](https://codeclimate.com/github/KahlanRahl/python-project-49)
+[![Actions Status](https://github.com/KahlanRahl/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/KahlanRahl/python-project-49/actions)
+[![Code Climate](https://codeclimate.com/github/KahlanRahl/python-project-49/badges/gpa.svg)](https://codeclimate.com/github/KahlanRahl/python-project-49)
 
 Brain Games — это набор мини-игр для тренировки мозга. Каждая игра задаёт вопросы, на которые нужно дать правильные ответы. После трёх правильных ответов игра считается пройденной. Неправильный ответ завершает игру и предлагает пройти её заново.
 
