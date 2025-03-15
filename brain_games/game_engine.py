@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import prompt  # Импортируем необходимые модули
-
 from brain_games.cli import welcome_user  # Импортируем функцию welcome_user
 
 ROUNDS_COUNT = 3  # Общее количество раундов для всех игр
